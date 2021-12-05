@@ -39,7 +39,8 @@ def get_possible_moves(table,redbowl,blackbowl,rb):
 
 
     return truepossible
-    
+
+
 def end_condition(redbowl,blackbowl,rb):
     if [redbowl,blackbowl] in rb:
         return 1
@@ -65,7 +66,7 @@ def solve(table,redbowl,blackbowl,RB_quantities,steps):
         solve(t,r,b,rb,s)
 
 #starting conditions
-table=7
+table=8
 redbowl = 0
 blackbowl = 0
 
@@ -87,7 +88,8 @@ endconditions.sort(key=len)
 endconditions.reverse()
 #print(endconditions[0])
 print(f"table start {table}")
-for i in range(20):
+solutionsamount = 500
+for i in range(min(solutionsamount,len(endconditions))):
     print(endconditions[i])
 
 print(f"It took {time.time()-start_time} seconds")
