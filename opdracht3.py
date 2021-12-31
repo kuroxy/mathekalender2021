@@ -66,7 +66,7 @@ def solve(table,redbowl,blackbowl,RB_quantities,steps):
         solve(t,r,b,rb,s)
 
 #starting conditions
-table=8
+table=7
 redbowl = 0
 blackbowl = 0
 

@@ -42,3 +42,6 @@ for i in anwserlist:
 print(amount)
 print(answer)
 print(f"It took {time.time()-begintime} seconds")
+
+
+  
